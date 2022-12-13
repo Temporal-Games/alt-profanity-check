@@ -2,11 +2,12 @@
 import pkg_resources
 import numpy as np
 import joblib
+import sklearn
 
-vectorizer = joblib.load(
+vectorizer: sklearn.feature_extraction.text.TfidfVectorizer = joblib.load(
     pkg_resources.resource_filename("profanity_check", "data/vectorizer.joblib")
 )
-model = joblib.load(
+model: sklearn.calibration.CalibratedClassifierCV = joblib.load(
     pkg_resources.resource_filename("profanity_check", "data/model.joblib")
 )
 
