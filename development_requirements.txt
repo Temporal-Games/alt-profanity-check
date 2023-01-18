@@ -1,8 +1,0 @@
-#
-# Requirements for development
-#
--r requirements.txt
-
-pytest==7.1.2
-pylint==2.14.5
-black==22.6.0

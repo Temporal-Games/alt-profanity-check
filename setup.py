@@ -17,9 +17,8 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/dimitrismistriotis/alt-profanity-check",
     packages=setuptools.find_packages(),
-    install_requires=["scikit-learn==1.0.2", "joblib>=1.2.0"],
     python_requires=">=3.8",
-    package_data={"profanity_check": ["data/model.joblib", "data/vectorizer.joblib"]},
+    package_data={"profanity_check": ["data/profanity.txt"]},
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Natural Language :: English",
